@@ -28,6 +28,11 @@ Plugin 'jnurmine/Zenburn'
 
 Plugin 'altercation/vim-colors-solarized'
 
+Plugin 'flazz/vim-colorschemes'
+
+Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+
+
 " All of your Plugins must be added before the following line
 call vundle#end() " required
 filetype plugin indent on " required
@@ -72,3 +77,10 @@ set encoding=utf-8
 
 let python_highlight_all=1
 syntax on
+
+" Settings used for powerline
+set laststatus=2 " Always display the statusline in all windows
+set showtabline=2 " Always display the tabline, even if there is only one tab
+set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
+
+colorscheme zenburn
